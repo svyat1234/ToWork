@@ -97,12 +97,8 @@ body {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 100px;
   background: #2B0955 url("../img/noise.png") no-repeat center/cover;
-}
-.promo__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .promo__title {
   position: relative;
@@ -192,6 +188,7 @@ body {
   }
   .promo {
     padding-bottom: 381px;
+    background: #2B0955 url("../img/gradient-blur.png") no-repeat left -130px bottom -100px;
   }
   .promo__title {
     font-size: 48px;
