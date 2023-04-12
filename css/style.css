@@ -1,0 +1,224 @@
+.light {
+  color: #fff;
+}
+
+.accent {
+  color: #FBC508;
+}
+
+.button__primary {
+  max-width: 186px;
+  width: 100%;
+  background-color: #FBC508;
+}
+
+.button__secondary {
+  max-width: 186px;
+  width: 100%;
+  background-color: #FBC508;
+  max-width: 202px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+*,
+input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 959px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #000;
+  font-size: 36px;
+  font-weight: 900;
+}
+.header__nav {
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__block {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 114px;
+  width: 100%;
+}
+.header__nav__link {
+  text-decoration: none;
+  color: #363636;
+  font-size: 14px;
+}
+.header__contacts {
+  max-width: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contacts__link {
+  width: 20px;
+  height: 20px;
+}
+.header__contacts__inst {
+  background: url("../img/instagram.svg") no-repeat center;
+}
+.header__contacts__facebook {
+  background: url("../img/facebook.svg") no-repeat center;
+}
+
+.promo {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2B0955 url("../img/noise.png") no-repeat center/cover;
+}
+.promo__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promo__title {
+  position: relative;
+  z-index: 5;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 88px;
+  max-width: 577px;
+  margin-bottom: 11px;
+}
+.promo__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  max-width: 454px;
+  display: inline-block;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 5;
+}
+.promo__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 404px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.promo__button {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo::after {
+  position: absolute;
+  content: "";
+  width: 599px;
+  height: 599px;
+  right: 20%;
+  top: 0;
+  margin-top: -35px;
+  background: url("../img/promo.png") no-repeat center;
+}
+.promo::before {
+  position: absolute;
+  content: "";
+  width: 570px;
+  height: 570px;
+  top: 0;
+  right: 17%;
+  background: url("../img/gradient-blur.png") no-repeat center 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 327px;
+  }
+  .header {
+    max-width: 335px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .header__logo {
+    order: 2;
+    margin-left: 15px;
+  }
+  .header__nav {
+    visibility: hidden;
+  }
+  .header__nav__block {
+    order: 1;
+    width: 22px;
+    height: 20px;
+    margin-right: 0;
+    background: url("../img/burger.svg") no-repeat center/cover;
+  }
+  .header__contacts {
+    order: 3;
+  }
+  .promo {
+    padding-bottom: 381px;
+  }
+  .promo__title {
+    font-size: 48px;
+    line-height: 137%;
+    margin-bottom: 16px;
+  }
+  .promo__info {
+    margin-bottom: 32px;
+  }
+  .promo__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .promo__button {
+    margin-bottom: 16px;
+  }
+  .promo::after {
+    bottom: 0;
+    right: 50%;
+    top: auto;
+    left: auto;
+    margin-bottom: -150px;
+    margin-left: 0;
+    margin-right: -145px;
+    width: 330px;
+  }
+  .promo::before {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

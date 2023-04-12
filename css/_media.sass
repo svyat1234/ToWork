@@ -1,0 +1,45 @@
+@media screen and (max-width: 550px) 
+    .container
+        max-width: 327px
+    .header
+        max-width: 335px
+        padding-top: 40px
+        padding-bottom: 20px
+        &__logo
+            order: 2
+            margin-left: 15px
+        &__nav
+            // display: none
+            visibility: hidden
+            &__block
+                order: 1
+                width: 22px
+                height: 20px
+                margin-right: 0
+                background: url('../img/burger.svg') no-repeat center / cover
+        &__contacts
+            order: 3
+    .promo
+        padding-bottom: 381px
+        &__title
+            font-size: 48px
+            line-height: 137%
+            margin-bottom: 16px    
+        &__info
+            margin-bottom: 32px
+        &__buttons
+            flex-direction: column
+            align-items: flex-start
+        &__button
+            margin-bottom: 16px
+        &::after
+           bottom: 0
+           right: 50%
+           top: auto
+           left: auto
+           margin-bottom: -150px
+           margin-left: 0
+           margin-right: -145px
+           width: 330px
+        &::before
+            display: none
