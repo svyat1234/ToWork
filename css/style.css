@@ -288,6 +288,9 @@ body {
   margin: 5px;
   border-radius: 50%;
 }
+.advantages__bullet-active {
+  background: #7000FF;
+}
 
 @media screen and (max-width: 550px) {
   .container {
